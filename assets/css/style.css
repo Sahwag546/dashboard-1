@@ -629,7 +629,7 @@ footer {
         left: 0;
     }
 
-    label[for="menuicn"] {
+    label[for="menuicon"] {
         width: 25px;
         height: 20px;
         cursor: pointer;
@@ -640,7 +640,7 @@ footer {
         margin-bottom: 0px;
     }
 
-    label[for="menuicn"] span {
+    label[for="menuicon"] span {
         width: 100%;
         height: 3px;
         background-color: white;
@@ -648,17 +648,17 @@ footer {
         transition: all 200ms linear;
     }
 
-    input:checked~label[for="menuicn"] span:first-child {
+    input:checked~label[for="menuicon"] span:first-child {
         transform: rotate(42deg);
         transform-origin: left;
     }
 
-    input:checked~label[for="menuicn"] span:last-child {
+    input:checked~label[for="menuicon"] span:last-child {
         transform: rotate(-42deg);
         transform-origin: left;
     }
 
-    input:checked~label[for="menuicn"] span:nth-child(2) {
+    input:checked~label[for="menuicon"] span:nth-child(2) {
         transform: translateX(-42px);
         opacity: 0;
         visibility: hidden;
