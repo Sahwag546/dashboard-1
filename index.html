@@ -16,11 +16,9 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    
-    <section class="grid-card color-dark-blue vh-100">
-        <div class="nav">
+    <section class="grid-card color-dark-blue vh-100 ">
+        <div class="nav ">
             <div class="d-flex justify-content-between py-4 color-light-blue upper-nav w-100 ps-3">
                 <div class=" d-flex align-items-center justify-content-center ">
                     <input type="checkbox" id="menuicon" hidden class="icn cursor menuicon">
@@ -113,7 +111,7 @@
                     Orinoco
                 </h1>
                 <div class="ml-20 text-iron-producer">
-                    <p class=" mb-0 color-light-grey-text fw-normal lh-150 text-center poppin-font fs-sm text-nowrap">
+                    <p class=" mb-0 color-light-grey-text fw-normal lh-150 hh text-center poppin-font fs-sm text-nowrap">
                         Iron producer</p>
                 </div>
                 <div class="d-flex w-100 justify-content-end ">
@@ -349,7 +347,7 @@
       <img class=" w-100 pb-3 pr-3 img-size" src="./assets/image/slider img-4.png" alt="">
      </div>
      </div>
-     <div class="show-four">
+     <div class="show-four wh-parent">
      <div>
       <img class="wh" src="./assets/image/slider img-1.png" alt="">
      </div>
@@ -451,9 +449,8 @@
   slidesToScroll: 2,
   arrows: false,
   asNavFor: '.slider-nav',
-  autoPlaySpeed:3000,
-  autoPlay:true,
    dots: true,
+   focusOnSelect:true,
     responsive: [
              
                 {
@@ -472,7 +469,6 @@ $('.slider-nav').slick({
   asNavFor: '.show-four',
   dots: false,
   arrows:false,
-
         });
     </script>
 </body>
