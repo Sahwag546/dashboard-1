@@ -387,6 +387,13 @@ progress::-webkit-progress-value {
     border-radius: 36px;
     background: var(--color-white-5);
 }
+.hover{
+    transition: all 300ms linear;
+    margin-bottom: 15px;
+}
+.hover:hover{
+    transform: scale(1.4);
+}
 
 .mini-slider .slick-dots li.slick-active button:before {
     color: transparent;
@@ -628,7 +635,7 @@ footer {
     aside>div.show {
         left: 0;
     }
-
+  
     label[for="menuicon"] {
         width: 25px;
         height: 20px;
