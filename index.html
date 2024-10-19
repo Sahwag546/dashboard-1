@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div class="grid-box vh-100 color-dark-blue">
+        <header>
+            <div class="d-flex justify-content-between py-4 color-light-blue upper-nav w-100 ps-3">
+                <div class=" d-flex align-items-center justify-content-center ">
+                    <input type="checkbox" id="menuicn" hidden class="icn cursor menuicn">
+                    <label for="menuicn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="logo ps-3">
+                        <img src="./assets/image/nav logo.png" alt="logo-icon">
+                    </div>
+
+                </div>
+
+                <div class="searchbar d-flex align-items-center ml w-100 ">
+                    <input type="text" placeholder="Search for Assets" class="fw-normal fs-sm lh-150 poppin-font text-white">
+                    <div class="searchbtn">
+                     <img src="./assets/image/svg/search bar.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="message d-flex align-items-center justify-content-center pe-5">
+                   <img src="./assets/image/svg/bell svg.svg" alt="">
+                    <div class="dp d-flex align-items-center ">
+                        <img src="./assets/image/girl nav img.png" alt="logo-dp" class="img-1">
+                        <h3 class="text-white ms-2  me-4 roboto-font lh-114 fw-normal fs-6 mb-0 text-nowrap jhon">
+                            Jhon Doe
+                        </h3>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary bg-transparent border-0" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/image/svg/down arrow.svg" alt="down-arrow"
+                                    class="cursor drop-down-arrow">
+                            </button>
+                            <ul class="dropdown-menu color-bg-blue">
+                                <li><a class="dropdown-item text-white " href="#">
+                                    <img class="ms-5" src="./assets/image/svg/bell svg.svg" alt="">
+                                </a></li>
+                                <li><a class="dropdown-item text-white d-flex align-items-center" href="#"><img
+                                            src="./assets/image/girl nav img.png" alt="logo-dp" class="dp-img-2">
+                                        <h3
+                                            class="text-white ms-2  me-4 roboto-font lh-114 fw-normal fs-6 mb-0 text-nowrap">
+                                            Jhon Doe
+                                        </h3>
+                                    </a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div class="side-nav h-xl-100">
+                <ul class="d-flex flex-column justify-content-between h-lg-less-75 h-xl-100 m-3 ps-0">
+                    <li class="text-decoration-none">
+                        <ul class="gap-10 d-flex flex-column">
+                            <li class="d-flex gap-12 bg-d nav-link py-3 ps-3 align-items-center"> <img
+                                    src="./assets/image/svg/time line.svg" alt="svg-icon"><a
+                                    class="color-light-white-2 h-text mb-0 fs-sm fw-normal lh-114 roboto-font text-decoration-none"
+                                    href="#">Timeline</a></li>
+                            <li class="d-flex gap-12 bg-d  nav-link py-3 ps-3 align-items-center"> <img
+                                    src="./assets/image/svg/graphics.svg" alt="svg-icon"><a
+                                    class="color-light-white-2 h-text mb-0 fs-sm fw-normal lh-114 roboto-font text-decoration-none"
+                                    href="#">Graphics</a></li>
+                            <li class="d-flex gap-12 bg-d nav-link py-3 ps-3 align-items-center"> <img
+                                    src="./assets/image/svg/portfolio.svg" alt="svg-icon"><a
+                                    class="color-light-white-2 h-text mb-0 fs-sm fw-normal lh-114 roboto-font text-decoration-none"
+                                    href="#">Portfolio</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="text-decoration-none">
+                        <ul>
+                            <li class="d-flex gap-12 bg-d nav-link py-3 ps-3 align-items-center my-2"> <img
+                                    src="./assets/image/svg/help.svg" alt="svg-icon"><a
+                                    class="color-light-white-2 h-text mb-0 fs-sm fw-normal lh-114 roboto-font text-decoration-none"
+                                    href="#">Help</a></li>
+                            <li class="d-flex gap-12 bg-d nav-link py-3 ps-3 align-items-center my-2"> <img
+                                    src="./assets/image/svg/exit svg.svg" alt="svg-icon"><a
+                                    class="color-light-white-2 h-text mb-0 fs-sm fw-normal lh-114 roboto-font text-decoration-none"
+                                    href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="color-dark-blue text-white py-3">
+            <div class="d-flex align-items-center w-100 ps-3 pe-3 flex-column-reverse flex-sm-row">
+                <h1 class="text-white fw-medium lh-114 fs-md mb-0 pt-3 roboto-font text-nowrap ">Ferrominera
+                    Orinoco
+                </h1>
+                <div class="ml-20 text-iron-producer">
+                    <p class=" mb-0 color-light-grey-text fw-normal lh-150 text-center poppin-font fs-sm text-nowrap">
+                        Iron producer</p>
+                </div>
+                <div class="d-flex w-100 justify-content-end ">
+                    <button class="back-btn roboto-font fw-medium text-center lh-114 mr">Back</button>
+                </div>
+            </div>
+
+            <div class="grid-main-box ps-3 pe-3">
+                <div class="box-1 mt-3 grid-item-1">
+                    <h2 class="color-light-grey-text roboto-font fw-medium  lh-114 fs-md min-w170">Working Capital Loan
+                    </h2>
+                    <p class="mb-0 color-light-white-2 lh-150 fw-normal poppin-font fs-sm">Type of instrument
+                    </p>
+                </div>
+                <div class="box-1 mt-3 grid-item-2">
+                    <h2 class="color-light-grey-text roboto-font fw-medium  lh-114 fs-md ">16.00%
+                    </h2>
+                    <p class="mb-0 color-light-white-2 lh-150 fw-normal poppin-font fs-sm text-nowrap">Interest rate
+                    </p>
+                </div>
+                <div class="box-1 mt-3 grid-item-3">
+                    <h2 class="color-light-grey-text roboto-font fw-medium  lh-114 fs-md text-nowrap">$
+                        5,565,099.00
+                    </h2>
+                    <p class="mb-0 color-light-white-2 lh-150 fw-normal poppin-font fs-sm">Total amount
+                    </p>
+                </div>
+                <div class="box-4 mt-3 grid-item-4 frame">
+                    <div class="d-flex mb-2">
+                        <div class="que-svg-1 d-flex align-items-center justify-content-center">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 17H9V15H11V17ZM13.07 9.25L12.17 10.17C11.45 10.9 11 11.5 11 13H9V12.5C9 11.4 9.45 10.4 10.17 9.67L11.41 8.41C11.78 8.05 12 7.55 12 7C12 5.9 11.1 5 10 5C8.9 5 8 5.9 8 7H6C6 4.79 7.79 3 10 3C12.21 3 14 4.79 14 7C14 7.88 13.64 8.68 13.07 9.25Z"
+                                    fill="white" style="fill:white;fill-opacity:1;" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="fw-normal fs-6  lh-114 text-start text-white roboto-font ms-3 mb-0">Enter
+                                Amount to Invest</h4>
+                            <p class="poppin-font fw-normal fs-6 lh-150 color-white-2 text-start ms-3">Invest
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between usd-box mb-3">
+                        <p class=" color-light-white-2 mb-0 fs-sm fw-normal lh-150 poppin-font">USD</p>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.25 5.847C8.314 6.103 7.75 6.822 7.75 7.5C7.75 8.178 8.314 8.897 9.25 9.152V5.847ZM10.75 10.848V14.152C11.686 13.897 12.25 13.178 12.25 12.5C12.25 11.822 11.686 11.103 10.75 10.848Z"
+                                fill="#62C9CC"
+                                style="fill:#62C9CC;fill:color(display-p3 0.3843 0.7882 0.8000);fill-opacity:1;" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20 10C20 15.523 15.523 20 10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10ZM10 3.25C10.1989 3.25 10.3897 3.32902 10.5303 3.46967C10.671 3.61032 10.75 3.80109 10.75 4V4.317C12.38 4.609 13.75 5.834 13.75 7.5C13.75 7.69891 13.671 7.88968 13.5303 8.03033C13.3897 8.17098 13.1989 8.25 13 8.25C12.8011 8.25 12.6103 8.17098 12.4697 8.03033C12.329 7.88968 12.25 7.69891 12.25 7.5C12.25 6.822 11.686 6.103 10.75 5.847V9.317C12.38 9.609 13.75 10.834 13.75 12.5C13.75 14.166 12.38 15.391 10.75 15.683V16C10.75 16.1989 10.671 16.3897 10.5303 16.5303C10.3897 16.671 10.1989 16.75 10 16.75C9.80109 16.75 9.61032 16.671 9.46967 16.5303C9.32902 16.3897 9.25 16.1989 9.25 16V15.683C7.62 15.391 6.25 14.166 6.25 12.5C6.25 12.3011 6.32902 12.1103 6.46967 11.9697C6.61032 11.829 6.80109 11.75 7 11.75C7.19891 11.75 7.38968 11.829 7.53033 11.9697C7.67098 12.1103 7.75 12.3011 7.75 12.5C7.75 13.178 8.314 13.897 9.25 14.152V10.683C7.62 10.391 6.25 9.166 6.25 7.5C6.25 5.834 7.62 4.609 9.25 4.317V4C9.25 3.80109 9.32902 3.61032 9.46967 3.46967C9.61032 3.32902 9.80109 3.25 10 3.25Z"
+                                fill="#62C9CC"
+                                style="fill:#62C9CC;fill:color(display-p3 0.3843 0.7882 0.8000);fill-opacity:1;" />
+                        </svg>
+                    </div>
+                    <div class="d-flex justify-content-between net-border mb-3">
+                        <p class="mb-0 text-white fw-normal fs-sm lh-114 roboto-font">Net Income</p>
+                        <p class="fw-bolder text-white fs-sm lh-114 text-start roboto-font mb-0">$00.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between net-border mb-3">
+                        <p class="mb-0 text-white fw-normal fs-sm lh-114 roboto-font text-nowrap">Maximum
+                            investment per
+                            user</p>
+                        <p class="fw-bolder text-white fs-sm lh-114 text-start roboto-font mb-0 text-nowrap">$
+                            5565099.00
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between net-border mb-3">
+                        <p class="mb-0 text-white fw-normal fs-sm lh-114 roboto-font">Your investment in the
+                            product</p>
+                        <p class="fw-bolder text-white fs-sm lh-114 text-start roboto-font mb-0">$00.00</p>
+                    </div>
+                    <button class="invest-btn text-white text-center fw-medium lh-114 fs-6 roboto-font">Invest
+                        now</button>
+                </div>
+                <div class="box-5 mt-3 grid-item-5">
+                    <div class="d-flex justify-content-between mb-20">
+                        <p class="text-white fw-medium lh-114 roboto-font fs-5 mb-0">Timeline</p>
+                        <p class="roboto-font fs-6 fw-normal lh-114 text-start color-light-grey-text mb-0">How
+                            does
+                            it works?</p>
+                    </div>
+                    <div class="d-flex justify-content-between ">
+                        <p class="poppin-font fw-normal fs-sm lh-150 color-white-2 mb-0">01/08/2023</p>
+                        <p class="poppin-font fw-normal fs-sm lh-150 color-white-2 mb-0">30/08/2023</p>
+                    </div>
+                    <progress class="progress-line" id="file" value="40" max="100"> </progress>
+                    <div class="d-flex justify-content-between ">
+                        <p class="roboto-font fw-normal fs-6 lh-114 text-white mb-0">$10.00</p>
+                        <p class="roboto-font fw-normal fs-6 lh-114 text-white mb-0">$5,565,500</p>
+                    </div>
+                    <div class="d-flex justify-content-between mt-1">
+                        <p class="roboto-font fw-normal fs-sm lh-114 color-light-white-2 mb-0">Initial public
+                            offering</p>
+                        <p class="roboto-font fw-normal fs-sm lh-114 color-light-white-2 mb-0">Credit
+                            performance (DDC)</p>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-4 df">
+                            <div class="d-flex align-items-center ">
+                                <div class="svg d-flex align-items-center justify-content-center me-3">
+                                 <img src="./assets/image/svg/box-svg-1.svg" alt="">
+                                </div>
+                                <div>
+                                    <p
+                                        class="text-white mb-0 roboto-font fw-normal fs-sm text-start lh-114 text-nowrap">
+                                        Working Capital Loan</p>
+                                    <p class="color-light-white-2 poppin-font lh-150 fw-normal fs-sm mb-0">Type
+                                        of instrument</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-4 mt-5 mt-sm-0 df">
+                            <div class="d-flex align-items-center ">
+                                <div class="svg d-flex align-items-center justify-content-center me-3">
+                                 <img src="./assets/image/svg/box-svg-2.svg" alt="">
+                                </div>
+                                <div>
+                                    <p
+                                        class="text-white mb-0 roboto-font fw-normal fs-sm text-start lh-114 text-nowrap">
+                                        Pantera Exchange</p>
+                                    <p class="color-light-white-2 poppin-font lh-150 fw-normal fs-sm mb-0">
+                                        Transmitter</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-4 mt-sm-5 mt-md-0 mt-lg-5 mt-xl-0 pe-lg-5 pe-xl-0 mt-5 df">
+                            <div class="d-flex align-items-center ">
+                                <div class="svg d-flex align-items-center justify-content-center me-3">
+                                  <img src="./assets/image/svg/box-svg-3.svg" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-white mb-0 roboto-font fw-normal fs-sm text-start lh-114">
+                                        Compass Bank</p>
+                                    <p class="color-light-white-2 poppin-font lh-150 fw-normal fs-sm mb-0">
+                                        Settlor entity</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-4 mt-5 pe-xl-5 df">
+                            <div class="d-flex align-items-center ">
+                                <div class="svg d-flex align-items-center justify-content-center me-3">
+                                    <img src="./assets/image/svg/box-svg-4.svg" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-white mb-0 roboto-font fw-normal fs-sm text-start">
+                                        $ 5565099.00</p>
+                                    <p class="color-light-white-2 poppin-font fw-normal fs-sm mb-0 text-nowrap">
+                                        Total amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-lg-12 col-xl-5 mt-5 ps-3  df">
+                            <div class="d-flex align-items-center ">
+                                <div class="svg d-flex align-items-center justify-content-center me-3">
+                                   <img src="./assets/image/svg/box-svg-5.svg" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-white mb-0 roboto-font fw-normal fs-sm text-start lh-114">
+                                        2 months</p>
+                                    <p class="color-light-white-2 poppin-font lh-150 fw-normal fs-sm mb-0 text-nowrap">
+                                        Estimated repayment date</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-5 mt-3 grid-item-6">
+                    <h2 class="fw-medium lh-114 fs-5 roboto-font text-white text-start mb-3">About company</h2>
+                    <p class="fw-normal fs-sm lh-114 roboto-font text-white text-start">Dictum sit lobortis
+                        hendrerit morbi leo amet sapien ipsum blandit.</p>
+                    <p class="poppin-font fw-normal fs-sm lh-150 text-start color-white-2 mw-770">Arcu fringilla
+                        tincidunt mauris ut risus massa ipsum. Metus adipiscing sed leo pharetra sed. Ut nulla
+                        libero vel ipsum
+                        adipiscing purus posuere. Dui pulvinar id enim tristique habitasse lobortis. Aliquam et
+                        et orci ultrices interdum
+                        rhoncus arcu mi quis. Arcu fringilla tincidunt mauris ut risus massa ipsum. Metus
+                        adipiscing sed leo pharetra sed. Ut
+                        nulla libero vel ipsum adipiscing purus posuere. Dui pulvinar id enim tristique
+                        habitasse lobortis. Aliquam et et orci
+                        ultrices interdum rhoncus arcu mi quis.</p>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="d-flex">
+                                <div class="svg-1 d-flex align-items-center justify-content-center me-3">
+                                  <img src="./assets/image/svg/file.svg" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-normal fs-sm lh-114 roboto-font text-white mb-1">Sales report
+                                    </p>
+                                    <p class="fw-normal fs-sm lh-150 poppin-font color-light-white-2">2022-2023
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-12 col-lg-6 col-xl-6">
+                            <div class="d-flex">
+                                <div class="svg-1 d-flex align-items-center justify-content-center me-3">
+                                  <img src="./assets/image/svg/pdf.svg" alt="">
+                                </div>
+                                <div>
+                                    <p class="fw-normal fs-sm lh-114 roboto-font text-white mb-1">Orinoco
+                                        Ferrominera wag...</p>
+                                    <p class="fw-normal fs-sm lh-150 poppin-font color-light-white-2">2022-2023
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-4 mt-3 grid-item-7">
+                    <p class="text-white fw-medium fs-5 lh-114 roboto-font">Company Gallery</p>
+                     <div class="slider-nav">
+     <div>
+      <img class=" w-100 pb-3 pr-3 img-size" src="./assets/image/slider img-1.png" alt="">
+     </div>
+     <div>
+      <img class=" w-100 pb-3 pr-3 img-size" src="./assets/image/slider img-2.png" alt="">
+     </div>
+     <div>
+      <img class=" w-100 pb-3 pr-3 img-size" src="./assets/image/slider img-3.png" alt="">
+     </div>
+     <div>
+      <img class=" w-100 pb-3 pr-3 img-size" src="./assets/image/slider img-4.png" alt="">
+     </div>
+      <div>
+      <img  class=" w-100 pb-3 pr-3 img-size"src="./assets/image/slider img-1.png" alt="">
+     </div>
+     <div>
+      <img class=" w-100 pb-3 pr-3 img-size" src="./assets/image/slider img-2.png" alt="">
+     </div>
+     <div>
+      <img class=" w-100 pb-3 pr-3 img-size" src="./assets/image/slider img-3.png" alt="">
+     </div>
+     <div>
+      <img class=" w-100 pb-3 pr-3 img-size" src="./assets/image/slider img-4.png" alt="">
+     </div>
+     </div>
+     <div class="show-four">
+     <div>
+      <img class="wh" src="./assets/image/slider img-1.png" alt="">
+     </div>
+     <div>
+      <img class="wh" src="./assets/image/slider img-2.png" alt="">
+     </div>
+     <div>
+      <img class="wh" src="./assets/image/slider img-3.png" alt="">
+     </div>
+     <div>
+      <img class="wh" src="./assets/image/slider img-4.png" alt="">
+     </div>
+      <div>
+      <img class="wh"  src="./assets/image/slider img-1.png" alt="">
+     </div>
+     <div>
+      <img class="wh" src="./assets/image/slider img-2.png" alt="">
+     </div>
+     <div>
+      <img class="wh" src="./assets/image/slider img-3.png" alt="">
+     </div>
+     <div>
+      <img class="wh" src="./assets/image/slider img-4.png" alt="">
+     </div>
+     </div>
+                </div>
+            </div>
+        </main>
+        <footer class="color-bg-blue py-3">
+            <div class="container d-flex justify-content-between align-items-center flex-column-reverse flex-sm-row ">
+                <p
+                    class=" text-center fw-normal lh-150 color-light-white-2 fs-sm poppin-font mt-3 mt-sm-0 mb-3 mb-sm-0 pl">
+                    ©
+                    Copyright
+                    2021 Pantera
+                    | All rights reserved.</p>
+                <div class="d-flex gap-20">
+                    <div class="circle-svg social-link">
+                        <a class="" href="https://www.facebook.com/" target="_blank"><svg width="11" height="20"
+                                viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 11.5H9.5L10.5 7.5H7V5.5C7 4.47 7 3.5 9 3.5H10.5V0.14C10.174 0.0970001 8.943 0 7.643 0C4.928 0 3 1.657 3 4.7V7.5H0V11.5H3V20H7V11.5Z"
+                                    fill="#62C9CC"
+                                    style="fill:#62C9CC;fill:color(display-p3 0.3843 0.7882 0.8000);fill-opacity:1;" />
+                            </svg></a>
+                    </div>
+                    <div class="circle-svg social-link">
+                        <a href="https://www.instagram.com/" target="_blank"><svg width="20" height="20"
+                                viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0286 0.0012304C11.7583 -0.00156983 12.488 0.00576429 13.2176 0.0232305L13.4116 0.0302304C13.6356 0.0382304 13.8566 0.0482304 14.1236 0.0602304C15.1876 0.11023 15.9136 0.278231 16.5506 0.525231C17.2106 0.779231 17.7666 1.12323 18.3226 1.67923C18.831 2.17884 19.2244 2.78318 19.4756 3.45023C19.7226 4.08723 19.8906 4.81423 19.9406 5.87823C19.9526 6.14423 19.9626 6.36623 19.9706 6.59023L19.9766 6.78423C19.9943 7.51342 20.002 8.24283 19.9996 8.97223L20.0006 9.71823V11.0282C20.003 11.758 19.9954 12.4877 19.9776 13.2172L19.9716 13.4112C19.9636 13.6352 19.9536 13.8562 19.9416 14.1232C19.8916 15.1872 19.7216 15.9132 19.4756 16.5502C19.2252 17.218 18.8317 17.8228 18.3226 18.3222C17.8225 18.8306 17.2179 19.224 16.5506 19.4752C15.9136 19.7222 15.1876 19.8902 14.1236 19.9402C13.8566 19.9522 13.6356 19.9622 13.4116 19.9702L13.2176 19.9762C12.4881 19.994 11.7583 20.0017 11.0286 19.9992L10.2826 20.0002H8.97358C8.24384 20.0027 7.5141 19.995 6.78458 19.9772L6.59058 19.9712C6.35319 19.9626 6.11585 19.9526 5.87858 19.9412C4.81458 19.8912 4.08858 19.7212 3.45058 19.4752C2.78326 19.2246 2.17881 18.8311 1.67958 18.3222C1.17062 17.8225 0.776801 17.2178 0.525577 16.5502C0.278577 15.9132 0.110577 15.1872 0.0605769 14.1232C0.0494399 13.8859 0.0394398 13.6486 0.030577 13.4112L0.0255771 13.2172C0.00714068 12.4877 -0.00119355 11.758 0.000577001 11.0282V8.97223C-0.00221397 8.24283 0.00512015 7.51343 0.0225771 6.78423L0.029577 6.59023C0.037577 6.36623 0.047577 6.14423 0.059577 5.87823C0.109577 4.81323 0.277577 4.08823 0.524577 3.45023C0.77595 2.78285 1.17054 2.17868 1.68058 1.68023C2.17947 1.17098 2.78354 0.776803 3.45058 0.525231C4.08858 0.278231 4.81358 0.11023 5.87858 0.0602304L6.59058 0.0302304L6.78458 0.0252306C7.51376 0.00680338 8.24316 -0.00153085 8.97258 0.000230468L11.0286 0.0012304ZM10.0006 5.00123C9.33808 4.99186 8.68033 5.11425 8.06555 5.3613C7.45077 5.60834 6.89122 5.97511 6.41942 6.44029C5.94762 6.90546 5.57298 7.45977 5.31726 8.07099C5.06155 8.68222 4.92987 9.33817 4.92987 10.0007C4.92987 10.6633 5.06155 11.3192 5.31726 11.9305C5.57298 12.5417 5.94762 13.096 6.41942 13.5612C6.89122 14.0264 7.45077 14.3931 8.06555 14.6402C8.68033 14.8872 9.33808 15.0096 10.0006 15.0002C11.3267 15.0002 12.5984 14.4734 13.5361 13.5358C14.4738 12.5981 15.0006 11.3263 15.0006 10.0002C15.0006 8.67415 14.4738 7.40238 13.5361 6.4647C12.5984 5.52701 11.3267 5.00123 10.0006 5.00123ZM10.0006 7.00123C10.3991 6.99389 10.7951 7.06603 11.1654 7.21344C11.5357 7.36085 11.8729 7.58057 12.1574 7.85978C12.4418 8.13898 12.6678 8.47206 12.822 8.83957C12.9763 9.20708 13.0558 9.60165 13.0558 10.0002C13.0559 10.3988 12.9766 10.7934 12.8224 11.1609C12.6683 11.5285 12.4424 11.8617 12.1581 12.141C11.8737 12.4203 11.5366 12.6401 11.1663 12.7876C10.796 12.9352 10.4001 13.0074 10.0016 13.0002C9.20593 13.0002 8.44287 12.6842 7.88026 12.1216C7.31765 11.5589 7.00158 10.7959 7.00158 10.0002C7.00158 9.20458 7.31765 8.44152 7.88026 7.87891C8.44287 7.3163 9.20593 7.00023 10.0016 7.00023L10.0006 7.00123ZM15.2506 3.50123C14.928 3.51414 14.6229 3.65138 14.3992 3.8842C14.1755 4.11702 14.0506 4.42736 14.0506 4.75023C14.0506 5.0731 14.1755 5.38344 14.3992 5.61626C14.6229 5.84908 14.928 5.98632 15.2506 5.99923C15.5821 5.99923 15.9 5.86753 16.1345 5.63311C16.3689 5.39869 16.5006 5.08075 16.5006 4.74923C16.5006 4.41771 16.3689 4.09977 16.1345 3.86535C15.9 3.63093 15.5821 3.49923 15.2506 3.49923V3.50123Z"
+                                    fill="#62C9CC"
+                                    style="fill:#62C9CC;fill:color(display-p3 0.3843 0.7882 0.8000);fill-opacity:1;" />
+                            </svg></a>
+
+                    </div>
+                    <div class="circle-svg social-link">
+                        <a href="https://x.com/?lang=en" target="_blank"><svg width="22" height="17" viewBox="0 0 22 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.4591 2C20.6891 2.35 19.8591 2.58 18.9991 2.69C19.8791 2.16 20.5591 1.32 20.8791 0.31C20.0491 0.81 19.1291 1.16 18.1591 1.36C17.3691 0.5 16.2591 0 14.9991 0C12.6491 0 10.7291 1.92 10.7291 4.29C10.7291 4.63 10.7691 4.96 10.8391 5.27C7.27906 5.09 4.10906 3.38 1.99906 0.79C1.62906 1.42 1.41906 2.16 1.41906 2.94C1.41906 4.43 2.16906 5.75 3.32906 6.5C2.61906 6.5 1.95906 6.3 1.37906 6V6.03C1.37906 8.11 2.85906 9.85 4.81906 10.24C4.18979 10.4122 3.52916 10.4362 2.88906 10.31C3.16067 11.1625 3.6926 11.9084 4.41008 12.4429C5.12756 12.9775 5.99451 13.2737 6.88906 13.29C5.37269 14.4904 3.49306 15.1393 1.55906 15.13C1.21906 15.13 0.879063 15.11 0.539062 15.07C2.43906 16.29 4.69906 17 7.11906 17C14.9991 17 19.3291 10.46 19.3291 4.79C19.3291 4.6 19.3291 4.42 19.3191 4.23C20.1591 3.63 20.8791 2.87 21.4591 2Z"
+                                    fill="#62C9CC"
+                                    style="fill:#62C9CC;fill:color(display-p3 0.3843 0.7882 0.8000);fill-opacity:1;" />
+                            </svg></a>
+                    </div>
+                    <div class="circle-svg social-link">
+                        <a href="https://in.linkedin.com/" target="_blank"><svg width="20" height="18"
+                                viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.94141 2.001C4.94114 2.53143 4.73017 3.04004 4.35491 3.41492C3.97965 3.78981 3.47084 4.00027 2.94041 4C2.40997 3.99974 1.90137 3.78877 1.52649 3.41351C1.1516 3.03825 0.941141 2.52943 0.941407 1.999C0.941672 1.46857 1.15264 0.959965 1.5279 0.585079C1.90316 0.210194 2.41197 -0.000264966 2.94241 2.50361e-07C3.47284 0.000265467 3.98144 0.211233 4.35633 0.586494C4.73121 0.961754 4.94167 1.47057 4.94141 2.001ZM5.00141 5.481H1.00141V18.001H5.00141V5.481ZM11.3214 5.481H7.34141V18.001H11.2814V11.431C11.2814 7.771 16.0514 7.431 16.0514 11.431V18.001H20.0014V10.071C20.0014 3.901 12.9414 4.131 11.2814 7.161L11.3214 5.481Z"
+                                    fill="#62C9CC"
+                                    style="fill:#62C9CC;fill:color(display-p3 0.3843 0.7882 0.8000);fill-opacity:1;" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        let menuIcon = document.querySelector("#menuicn");
+        let sideContent = document.querySelector("aside div");
+        menuIcon.addEventListener("click", () => {
+            sideContent.classList.toggle("show");
+        })
+    </script>
+   <script>
+      $('.show-four').slick({
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  arrows: false,
+  asNavFor: '.slider-nav',
+  autoPlaySpeed:3000,
+  autoPlay:true,
+   dots: true,
+    responsive: [
+             
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                        slidesToScroll: 4,
+                    }
+                },
+            ]
+});
+$('.slider-nav').slick({
+  slidesToShow: 1,
+  slidesToScroll: 2,
+  asNavFor: '.show-four',
+  dots: false,
+  arrows:false,
+
+        });
+    </script>
+</body>
+
+</html>
