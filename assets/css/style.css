@@ -320,6 +320,9 @@ main::-webkit-scrollbar {
     border: 1px solid var(--color-light-grey-text);
 
 }
+.mb-50{
+    margin-bottom: 100px;
+}
 
 .progress-line {
     width: 100%;
