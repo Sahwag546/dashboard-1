@@ -280,22 +280,15 @@ main::-webkit-scrollbar {
         padding-left: 150px;
       }
 
-.svg-1:hover {
-    transform: scale(1.3);
-   
+.svg-1 {
+    cursor: pointer;
 }
 
 .svg {
     background-color: var(--color-light-grey-text);
-    /* height: 36px;
-    width: 36px; */
     padding: 10px;
     border-radius: 8px;
-    transition: all 300ms linear;
-}
-
-.svg:hover {
-    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .usd-box {
@@ -390,9 +383,7 @@ progress::-webkit-progress-value {
 .hover{
     transition: all 300ms linear;
     margin-bottom: 15px;
-}
-.hover:hover{
-    transform: scale(1.4);
+    cursor: pointer;
 }
 
 .mini-slider .slick-dots li.slick-active button:before {
@@ -418,12 +409,11 @@ progress::-webkit-progress-value {
 /* footer */
 footer {
     grid-column: 1/4;
-    grid-row: 3/4;
+    grid-row: 3/3;
     position: sticky;
     bottom: 0;
     left: 0;
     width: 100%;
-
 }
 
 .social-link {
@@ -453,6 +443,9 @@ footer {
 }
 .ml-20{
     margin-left: 20px;
+}
+.pr-20{
+    padding-right: 20px;
 }
 
 
@@ -521,6 +514,10 @@ footer {
         transition: all 200ms linear;
         border-right: 3px solid var(--color-blue-3) !important;
     }
+    .vh{
+    height: ;
+}
+   
 }
 @media (min-width:1200px) {
     .wh{
@@ -563,10 +560,13 @@ footer {
     .grid-item-7 {
         grid-column: 1/2;
         grid-row: 8/9;
-        max-width: 350px;
+        max-width: 310px;
 
     }
 
+}
+.vh{
+    height: 100vh;
 }
 
 @media (min-width:576px) {
@@ -608,9 +608,7 @@ footer {
         grid-column: 1/4;
         grid-row: 5/6;
         max-width: 350px;
-
     }
-
 }
 
 @media (max-width:768px) {
